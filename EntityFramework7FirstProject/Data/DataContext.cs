@@ -12,7 +12,7 @@ namespace EntityFramework7FirstProject.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=dotnet7testdb;Trusted_Connection=true;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=.\\MSSQLLocalDB;Database=dotnet7testdb;Trusted_Connection=true;TrustServerCertificate=true;");
         }
 
         public DbSet<WeatherForecast> Forecasts { get; set; }
